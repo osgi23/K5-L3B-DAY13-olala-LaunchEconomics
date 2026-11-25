@@ -25,7 +25,7 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 | Hoá đơn token và tool chia cho số yêu cầu | 274,7 | `(token + tool) / 1.200` | đo từ trace |
 
 - Chi phí mỗi việc thành công gấp bao nhiêu lần "hoá đơn chia số yêu cầu"? Gấp **16,3 lần** (`4.472 / 274,7`) [simulated]. Nếu tính cả 222 ca không thành công (nhân viên làm thay 12.000 đ/ca), chi phí cả hệ thống là **5.865 đ/yêu cầu = 0,49×** mức 12.000 đ [simulated].
-- Khoản nào chiếm tỉ trọng lớn nhất trong tổng chi phí, bao nhiêu phần trăm? **Làm lại** chiếm lớn nhất với **51,8%** (2.264.000 đ) [simulated], tiếp theo là **xem lại 40,7%** (1.780.000 đ) [simulated]; tổng giờ nhân viên chiếm **92,5%** chi phí.
+- Khoản nào chiếm tỉ trọng lớn nhất trong tổng chi phí, bao nhiêu phần trăm? **Làm lại** chiếm lớn nhất với **51,8%** (2.264.000 đ) [simulated], tiếp theo là **xem lại 40,7%** (1.780.000 đ) [simulated]; tổng giờ nhân viên chiếm **92,5%** chi phí [simulated].
 
 ## A3 · Tách theo loại yêu cầu
 

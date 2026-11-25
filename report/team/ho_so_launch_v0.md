@@ -14,7 +14,7 @@ Nhóm: olala (làm cá nhân: NguyenManhQuan – 2A202603776) · Lớp: L3B
 | 6 · Pilot plan | Phạm vi `noi_dia` + `hang_nang` (loại `quoc_te`, `doi_tac`); chia ngẫu nhiên **20 + 20 nhân viên**, $m \ge 299$, **n = 859/nhóm**, MDE **+6 điểm** (power **0,64** nếu thật là +5 điểm); 3 luật dừng đủ 4 vế | Xong, có bằng chứng | Giám đốc vận hành LogiX-VN |
 | 7 · Rủi ro kinh tế | Làm lại ×2 đẩy chi phí lên **6.787 đ**; xem lại 100% kéo dài hết tiết kiệm (**1,03×**); giảm nửa khối lượng tăng cố định lên **+2.370 đ/việc** (`simulated`) | Giả lập | PM trợ lý hoàn phí |
 
-**Đề xuất:** **Go có điều kiện** cho pilot phạm vi `noi_dia` + `hang_nang` (từ chối mở pilot cho `quoc_te` 1,88× và `doi_tac` 0,85×). Bốn điều kiện bắt buộc kèm người phụ trách và ngày kiểm tra:
+**Đề xuất:** **Go có điều kiện** cho pilot phạm vi `noi_dia` + `hang_nang` (từ chối mở pilot cho `quoc_te` 1,88× và `doi_tac` 0,85×, `simulated`). Bốn điều kiện bắt buộc kèm người phụ trách và ngày kiểm tra:
 
 - **Điều kiện 1 (An toàn hệ thống):** Sửa khoá chống trùng lệnh hoàn (Ca 20) và đối soát `refund_ledger_write` (Ca 7) không để báo "đã hoàn" khi sổ cái lỗi 503 — Phụ trách: **Kỹ sư trưởng agent** — Kiểm tra trước khi bật pilot (**2026-12-01**).
 - **Điều kiện 2 (Cỡ mẫu & đánh đổi):** Ký xác nhận chấp nhận MDE **+6 điểm** (`n = 859`, `20 NV/nhóm`, chấp nhận power giảm còn **0,64** nếu mức tăng thật chỉ là +5 điểm) — Phụ trách: **Giám đốc vận hành LogiX-VN** — Kiểm tra trước ngày chạy (**2026-12-01**).

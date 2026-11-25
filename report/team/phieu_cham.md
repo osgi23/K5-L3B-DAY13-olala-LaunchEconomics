@@ -2,20 +2,20 @@
 
 Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo bằng chứng trong hồ sơ, không theo cách trình bày: một đề xuất No-go có lý do bằng số được điểm cao hơn một đề xuất Go bỏ qua con số bất lợi.
 
-- Nhóm chấm (hội đồng): ...
-- Nhóm được chấm: ...
+- Nhóm chấm (hội đồng): olala (L3B · làm cá nhân: NguyenManhQuan – MSSV: 2A202603776)
+- Nhóm được chấm: 4ChangLinhNguLam (`https://github.com/Neronmen/K5-L3B-DAY13-4ChangLinhNguLam-LaunchEconomics`, commit `464cace`)
 
 | Tiêu chí | 0 điểm | 5 điểm | 10 điểm | Điểm | Lý do (có số) |
 | --- | --- | --- | --- | ---: | --- |
-| Đề xuất khớp bằng chứng | Mâu thuẫn với số của chính nhóm | Khớp nhưng bỏ qua một con số bất lợi | Khớp, nêu cả con số bất lợi và cách xử lý | ... | ... |
-| Số giả lập và phạm vi | Không nhãn; phạm vi "mọi yêu cầu" | Có nhãn hoặc có thu hẹp phạm vi | Nhãn ở mọi số giả lập; phạm vi thu hẹp có lý do bằng số | ... | ... |
-| Pilot ra được quyết định | Không đối chứng hoặc thiếu cỡ mẫu | Đủ cỡ mẫu, luật dừng chung chung | Tách được tác động, đủ mẫu, luật dừng có ngưỡng, thời hạn, người có quyền dừng | ... | ... |
-| **Tổng** | | | | **... / 30** | |
+| Đề xuất khớp bằng chứng | Mâu thuẫn với số của chính nhóm | Khớp nhưng bỏ qua một con số bất lợi | Khớp, nêu cả con số bất lợi và cách xử lý | 10 | Đề xuất **Go có điều kiện** khớp với lợi ích kinh tế của `noi_dia` (0,22×) và `hang_nang` (0,69×, cộng cố định 0,38× `simulated`), đồng thời nêu đủ 3 con số bất lợi (power 0,64 ở mức +5 điểm, xem lại 100% tốn 0,98–1,03× `simulated`, `quoc_te` 1,88× `simulated`) lẫn khuyết điểm bộ nhãn Nhiệm vụ C (đánh dấu trạng thái `Chưa`) kèm 4 điều kiện xử lý có người phụ trách và ngày kiểm tra. |
+| Số giả lập và phạm vi | Không nhãn; phạm vi "mọi yêu cầu" | Có nhãn hoặc có thu hẹp phạm vi | Nhãn ở mọi số giả lập; phạm vi thu hẹp có lý do bằng số | 10 | Các số tính từ `_simulated` trong `ho_so_launch_v0.md`, `chi_so.md` và `bang_chi_phi.md` đều gắn nhãn `[simulated]`; phạm vi thu hẹp còn `noi_dia + hang_nang` (`982/1.200 = 81,8%`) có lý do bằng số khi loại `quoc_te` (1,88× `simulated`, thành công 27,3%, lần 3 ok 2,2%) và `doi_tac` (0,85× `simulated`, điều khoản riêng). |
+| Pilot ra được quyết định | Không đối chứng hoặc thiếu cỡ mẫu | Đủ cỡ mẫu, luật dừng chung chung | Tách được tác động, đủ mẫu, luật dừng có ngưỡng, thời hạn, người có quyền dừng | 10 | Chia ngẫu nhiên phân tầng theo `staff` 20 + 20 cụm cùng thời gian/depot, phân quyền tài khoản và log `staff_id` giảm spillover; đủ mẫu cho MDE +6 điểm (`n = 859/nhóm`, `DE = 6,96`, `m >= 299`); có 3 luật dừng đủ 4 vế (an toàn: +2 điểm hoặc > 6% hoặc >= 1 ca trùng / 3 ngày, Giám đốc vận hành tắt trong 30 phút; chi phí: > 8.000 đ / 2 tuần, PM thu hẹp về `noi_dia` + 2 lần; sử dụng: bỏ qua > 40% hoặc dùng < 20% / 1 tuần, Trưởng nhóm CSKH). |
+| **Tổng** | | | | **30 / 30** | |
 
-**Quyết định của hội đồng:** Go · Go có điều kiện · No-go (giữ một)
+**Quyết định của hội đồng:** Go có điều kiện
 
-**Lý do:** ...
+**Lý do:** Hồ sơ của nhóm 4ChangLinhNguLam khớp số liệu từ `src/lab13.py` (chi phí thật 4.472 đ `simulated`; `noi_dia + hang_nang` cộng cố định 4.599 đ = 0,38× `simulated`), nêu rõ cả các con số bất lợi (power 0,64 ở mức +5 điểm; xem lại 100% tốn 0,98–1,03× `simulated`; `quoc_te` 1,88× `simulated`) và trung thực đánh dấu mục 5 `bang_loi.md` ở trạng thái `Chưa` vì bộ nhãn 1 có AI hỗ trợ. Thiết kế pilot 20 + 20 nhân viên tách được tác động, đủ mẫu (`859/nhóm`, `m >= 299`) và có 3 luật dừng đủ ngưỡng, thời hạn, vai trò dừng kèm rollback 30 phút. Chỉ được chạy pilot khi hoàn tất 4 điều kiện đã đặt, đặc biệt gắn lại độc lập 20 ca ở Nhiệm vụ C trước ngày `2026-12-04`.
 
-**Một câu hỏi cho đội trình:** ...
+**Một câu hỏi cho đội trình:** Trong `pilot_plan.yaml`, đội đặt luật dừng chi phí là `> 8.000 đ/việc` trong 2 tuần liên tiếp và chỉ đo chỉ số chính từ bước `0.50` (cần `>= 299` yêu cầu/người trong khoảng 10 ngày). Nếu giai đoạn đầu phải xem lại 100% khiến chi phí thực tế lên `11.743–12.415 đ` (`0,98–1,03×`, `simulated`) hoặc thời gian xem lại vượt mức hoà vốn `4,8–5,1 phút/ca` (`simulated`), đội dự kiến giảm tỉ lệ xem lại ở mốc ngày nào và dựa vào ngưỡng sai số nào để không bị luật dừng chi phí cắt pilot giữa chừng?
 
-**Câu trả lời của đội trình (ghi lại tại buổi):** ...
+**Câu trả lời của đội trình (ghi lại tại buổi / đối chiếu trực tiếp từ repo 4ChangLinhNguLam):** *(Chưa hỏi–đáp trực tiếp; đối chiếu từ hồ sơ repo của đội)*: Trong `chi_so.md` (E2) và `ho_so_launch_v0.md` (Điều kiện 3), nhóm dự kiến theo dõi hằng tuần `review_duration_sec / 60` với ngưỡng hoà vốn thận trọng `4,8 phút` (`simulated`) để đơn giản hoá thao tác xem lại, và chốt mốc kiểm tra **`2026-12-21`** (sau 2 tuần đầu, do **Kế toán trưởng** kiểm tra) để thay phút `simulated` bằng phút đo thật và giữ chi phí `<= 8.000 đ/việc`; nếu vượt `> 8.000 đ` trong 2 tuần liên tiếp thì luật dừng chi phí thu hẹp phạm vi về `noi_dia` và tối đa 2 lần chạy thay vì tắt toàn bộ pilot. Tuy nhiên, hồ sơ hiện chưa nêu rõ ngưỡng sai số và lộ trình phần trăm giảm tỉ lệ xem lại từ 100% xuống trước ngày `2026-12-21`.
